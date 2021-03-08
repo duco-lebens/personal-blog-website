@@ -4,38 +4,44 @@
     <meta charset="utf-8" />
     <title>Bloggin'</title>
     <meta
-      content="width=device-width, initial-scale=1, maximum-scale=1"
+      content="width=device-width, initial-scale=1"
       name="viewport"
     />
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="">
-
   </head>
 
   <body>
-  <div class = "container">
-    <div id="header"  class="box">
-       <h1>Subject of this site</h1>
-       <body>Home - About us - Take a peek</body>
-    </div>
+    <div class="container">
+      <div id="header" class="box">
+        <h1>My first BLOG</h1>
+        <body>Home - Techno(logy) used - Take a peek</body>
+      </div>
     <div id="content" class="box">
-       <h1>Latest news</h1>
-       <body>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non exercitationem suscipit alias consequuntur iusto autem dolor vel iste officia harum pariatur hic, qui accusamus dolores! Eveniet odio saepe sapiente soluta! Lorem ipsum dolor sit amet consectetur adipisicing elit. Non exercitationem suscipit alias consequuntur iusto autem dolor vel iste officia harum pariatur hic, qui accusamus dolores! Eveniet odio saepe sapiente soluta!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non exercitationem suscipit alias consequuntur iusto autem dolor vel iste officia harum pariatur hic, qui accusamus dolores! Eveniet odio saepe sapiente soluta! Lorem ipsum dolor sit amet consectetur adipisicing elit. Non exercitationem suscipit alias consequuntur iusto autem dolor vel iste officia harum pariatur hic, qui accusamus dolores! Eveniet odio saepe sapiente soluta!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non exercitationem suscipit alias consequuntur iusto autem dolor vel iste officia harum pariatur hic, qui accusamus dolores! Eveniet odio saepe sapiente soluta! Lorem ipsum dolor sit amet consectetur adipisicing elit. Non exercitationem suscipit alias consequuntur iusto autem dolor vel iste officia harum pariatur hic, qui accusamus dolores! Eveniet odio saepe sapiente soluta!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non exercitationem suscipit alias consequuntur iusto autem dolor vel iste officia harum pariatur hic, qui accusamus dolores! Eveniet odio saepe sapiente soluta! Lorem ipsum dolor sit amet consectetur adipisicing elit. Non exercitationem suscipit alias consequuntur iusto autem dolor vel iste officia harum pariatur hic, qui accusamus dolores! Eveniet odio saepe sapiente soluta!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non exercitationem suscipit alias consequuntur iusto autem dolor vel iste officia harum pariatur hic, qui accusamus dolores! Eveniet odio saepe sapiente soluta! Lorem ipsum dolor sit amet consectetur adipisicing elit. Non exercitationem suscipit alias consequuntur iusto autem dolor vel iste officia harum pariatur hic, qui accusamus dolores! Eveniet odio saepe sapiente soluta!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non exercitationem suscipit alias consequuntur iusto autem dolor vel iste officia harum pariatur hic, qui accusamus dolores! Eveniet odio saepe sapiente soluta! Lorem ipsum dolor sit amet consectetur adipisicing elit. Non exercitationem suscipit alias consequuntur iusto autem dolor vel iste officia harum pariatur hic, qui accusamus dolores! Eveniet odio saepe sapiente soluta!
-       </body>
+      <body>
+        <h1>What the Blog?</h1>
+        <h4>March 8 - 2021</h4>
+        <p>This time we have been at the technology fair free of masks.
+        <p id="jojo"></p>
+        <script>
+          var str = "Lorem ipsum dolor sit amet consectetur adipisicing elit." +
+                    "Non exercitationem suscipit alias consequuntur iusto autem " +
+                    "dolor vel iste officia harum pariatur hic, qui accusamus dolores! " +
+                    "Eveniet odio saepe sapiente soluta! "
+          document.getElementById("jojo").innerHTML = str.repeat(40);
+        </script>
+      </body>
+    </div>
+    <div id="aboutus" class="box">
+        <h3>About this blog</h3>
+        <p>This blog is a first attempt on utilizing what I've learned in the first section of this course</p>
     </div>
     <div id="sidebar" class="box">
-        <h1>Previous posts</h1>
-        <a href="blog-posts.html"><h2>Januari</h2></a>
-        <a href="blog-posts.html"><h2>Februari</h2></a>
-        <a href="blog-posts.html"><h2>March</h2></a>
+        <h3>Previous posts</h3>
+        <a href="blog-posts.html">Januari</a>
+        <a href="blog-posts.html">Februari</a>
+        <a href="blog-posts.html">March</a>
      </div>
-    <div id="footer"  class="box">
+    <div id="footer" class="box">
         Footer
     </div>
   </div>
@@ -43,21 +49,6 @@
 </html>
 
 <!--
-.parent {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  }
-  
-  .div1 { grid-area: 1 / 1 / 2 / 5; }
-  .div2 { grid-area: 5 / 1 / 6 / 5; }
-  .div3 { grid-area: 2 / 4 / 5 / 5; }
-  .div4 { grid-area: 2 / 1 / 5 / 4; }
-
-
-
     leesvoer
     https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries
 -->
