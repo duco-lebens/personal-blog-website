@@ -20,17 +20,19 @@
       </div>
     <div id="content" class="box">
       <body>
-        <h1>What the Blog?</h1>
-        <h2>March 8 - 2021</h2>
-        <p>This time we have been at the technology fair <b>free of ioT</b> in cyberspace
-        <p id="jojo"></p>
-        <script>
-          var str = "Lorem ipsum dolor sit amet consectetur adipisicing elit." +
-                    "Non exercitationem suscipit alias consequuntur iusto autem " +
-                    "dolor vel iste officia harum pariatur hic, qui accusamus dolores! " +
-                    "Eveniet odio saepe sapiente soluta! "
-          document.getElementById("jojo").innerHTML = str.repeat(20);
-        </script>
+        <section aria-labelledby="whattheblog"></section>
+          <h1 id="whattheblog">What the Blog?</h1>
+          <h2>March 8 - 2021</h2>
+          <p>This time we have been at the technology fair <b>free of ioT</b> in cyberspace
+          <p id="jojo"></p>
+          <script>
+            var str = "Lorem ipsum dolor sit amet consectetur adipisicing elit." +
+                      "Non exercitationem suscipit alias consequuntur iusto autem " +
+                      "dolor vel iste officia harum pariatur hic, qui accusamus dolores! " +
+                      "Eveniet odio saepe sapiente soluta! "
+            document.getElementById("jojo").innerHTML = str.repeat(20);
+          </script>
+        </section>
       </body>
     </div>
     <div id="aboutus" class="box">
@@ -41,7 +43,7 @@
     </div>
     <div id="sidebar" class="box">
       <section aria-labelledby="prevpost"></section>
-        <h3 id="projection">Previous posts</h3>
+        <h3 id="prevpost">Previous posts</h3>
         <a href='blog-post-january.html'>January</a>
         <a href='blog-post-february.html'>February</a>
         <a href='blog-post-march.html'>March</a>
