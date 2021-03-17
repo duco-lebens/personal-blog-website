@@ -28,15 +28,14 @@
       </div>
     <div id="content" class="box">
       <body>
-
         <div class="row">
           <div class="column">
             <article class="card">
-              <div hidden role="main">
-                <h1>Another year</h1>
+              <section aria-labelledby="firstjanpost">                
+                <h1 id="firstjanpost">Another year</h1>
                 <h2>January 2nd - 2021</h2>
                 <i>Author: Il Magico</i>
-              </div>
+              </section>
               <p>A new year just started and hopefuly without viri</p>
               <p id="first"></p>
               <img id="myImg" src="img/january-2nd.way-too-big.jpg" alt="ioT image" class="center">
@@ -53,11 +52,13 @@
         
           <div class="column">
             <article class="card">
-              <h1>We're on our way</h1>
-              <h2>January 21st - 2021</h2>
-              <i>Author: James McGill</i>
-              <p>Already well into the new year and not a glitch in site!</p>
-              <p id="third"></p>
+              <section aria-labelledby="secondjanpost">
+                <h1 id="secondjanpost">We're on our way</h1>
+                <h2>January 21st - 2021</h2>
+                <i>Author: James McGill</i>
+                <p>Already well into the new year and not a glitch in site!</p>
+                <p id="third"></p>
+              </section>
             </article>
           </div>
         </div>
@@ -93,7 +94,7 @@
 
       </script>
     </div>
-    <div id="footer" class="box">
+    <div id="footer" class="box" role="navigation">
       <a href="index.html" ><h3>Return home</h3></a>
     </div>
   </body>
