@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Blog post number 1</title>
+    <meta
+      content="width=device-width, initial-scale=1"
+      name="viewport"
+    />
+    <link rel="stylesheet" type="text/css" href="css/blog-post.css" media="screen,projection">
+    <link rel="stylesheet" type="text/css" href="css/lines.css" media="screen,projection">
+    <link rel="stylesheet" type="text/css" href="css/cards.css" media="screen,projection">
+    <link rel="stylesheet" type="text/css" href="css/modal.css" media="screen,projection">
+
+    <script>
+      /* blog filling */
+      var str = "Lorem ipsum dolor sit amet consectetur adipisicing elit." +
+                      "Non exercitationem suscipit alias consequuntur iusto autem " +
+                      "dolor vel iste officia harum pariatur hic, qui accusamus dolores! " +
+                      "Eveniet odio saepe sapiente soluta! "
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div id="header" class="box">
+        <h1>January</h1>
+        <body>All of this month's writing</body>
+      </div>
+    <div id="content" class="box">
+      <body>
+
+        <div class="row">
+          <div class="column">
+            <article class="card">
+              <h1>Another year</h1>
+              <h4>January 2nd - 2021</h4>
+              <i>Author: Il Magico</i>
+              <p>A new year just started and hopefuly without viri</p>
+              <p id="first"></p>
+              <img id="myImg" src="img/january-2nd.way-too-big.jpg" alt="ioT image" class="center">
+              <!-- A modal window when the picture was clicked -->
+              <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+              </div>
+              <i class="center">Close up of the new board</i>
+              <p id="second"></p>
+            </article>
+          </div>
+        
+          <div class="column">
+            <article class="card">
+              <h1>We're on our way</h1>
+              <h4>January 21st - 2021</h4>
+              <i>Author: James McGill</i>
+              <p>Already well into the new year and not a glitch in site!</p>
+              <p id="third"></p>
+            </article>
+          </div>
+        </div>
+        
+      </body>
+      <script>
+        /* put in some filling, and again, and again... */
+        document.getElementById("first").innerHTML = str.repeat(8);  
+        document.getElementById("second").innerHTML = str.repeat(9);
+        document.getElementById("third").innerHTML = str.repeat(9);
+
+        // a few lines for zooming the picture. Design in modal.css
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("myImg");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() { 
+          modal.style.display = "none";
+        }
+
+      </script>
+    </div>
+    <div id="footer" class="box">
+      <a href="index.html" ><h3>Return home</h3></a>
+    </div>
+  </body>
+</html>
