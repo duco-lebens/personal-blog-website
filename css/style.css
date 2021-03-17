@@ -80,6 +80,7 @@ h1, h4 {
 #sidebar{
   grid-area: sd;
   background: burlywood;
+  
 }
 
 #aboutus{
