@@ -13,10 +13,10 @@
   <body>
     <div class="container">
       <div id="header" class="box">
-        <div role="main">
-            <h1>My first BLOG</h1>
-        </div>
+        <section aria-labelledby="titleblog">
+        <h1 id="titleblog">My first BLOG</h1>
         <body>Home of Techno(logy) used in daily life - Take a peek</body>
+        </section>
       </div>
     <div id="content" class="box">
       <body>
@@ -42,14 +42,14 @@
       </section>
     </div>
     <div id="sidebar" class="box">
-      <section aria-labelledby="prevpost">
+      <div role="navigation" aria-labelledby="prevpost">
         <h3 id="prevpost">Previous posts</h3>
         <a href='blog-post-january.html'>January</a>
         <a href='blog-post-february.html'>February</a>
         <a href='blog-post-march.html'>March</a>
-      </section>
+      </div>
     </div>
-    <div id="footer" class="box">
+    <div id="footer" class="box" role="navigation">
       <a href="#" class="fa fa-facebook" aria-label="Link to our Facebook page"></a>
       <a href="#" class="fa fa-twitter" aria-label="Link to our Twitter page"></a>
       <a href="#" class="fa fa-youtube" aria-label="Link to our YouTube channel"></a>
