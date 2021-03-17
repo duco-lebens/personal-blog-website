@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="css/modal.css" media="screen,projection">
 
     <script>
-      /* blog filling */
+      // blog filling
       var str = "Lorem ipsum dolor sit amet consectetur adipisicing elit." +
                       "Non exercitationem suscipit alias consequuntur iusto autem " +
                       "dolor vel iste officia harum pariatur hic, qui accusamus dolores! " +
@@ -35,18 +35,18 @@
                 <h1 id="firstjanpost">Another year</h1>
                 <h2>January 2nd - 2021</h2>
                 <i>Author: Il Magico</i>
+                <p>A new year just started and hopefuly without viri</p>
+                <p id="first"></p>
+                <img id="myImg" src="img/january-2nd.way-too-big.jpg" alt="ioT image" class="center">
+                <!-- A modal window when the picture was clicked -->
+                <div id="myModal" class="modal">
+                  <span class="close">&times;</span>
+                  <img class="modal-content" id="img01">
+                  <div id="caption"></div>
+                </div>
+                <i class="center">Close up of the new board</i>
+                <p id="second"></p>
               </section>
-              <p>A new year just started and hopefuly without viri</p>
-              <p id="first"></p>
-              <img id="myImg" src="img/january-2nd.way-too-big.jpg" alt="ioT image" class="center">
-              <!-- A modal window when the picture was clicked -->
-              <div id="myModal" class="modal">
-                <span class="close">&times;</span>
-                <img class="modal-content" id="img01">
-                <div id="caption"></div>
-              </div>
-              <i class="center">Close up of the new board</i>
-              <p id="second"></p>
             </article>
           </div>
         
@@ -65,7 +65,7 @@
         
       </body>
       <script>
-        /* put in some filling, and again, and again... */
+        // put in some filling, and again, and again...
         document.getElementById("first").innerHTML = str.repeat(8);  
         document.getElementById("second").innerHTML = str.repeat(9);
         document.getElementById("third").innerHTML = str.repeat(9);
