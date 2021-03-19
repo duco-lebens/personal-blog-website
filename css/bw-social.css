@@ -2,7 +2,7 @@
 /* overwrite .fa class with different style from global one */
 /* used in article author line */
 
-.fa.fa {
+#content .fa {
     background: none;
     color: black;
     padding: 0;
