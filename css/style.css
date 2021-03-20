@@ -59,7 +59,7 @@ h1, h4 {
 
 #header{
   grid-area: hd;
-  background-image: url(../img/header-background.jpg); /* image courtesy of unsplash.com */
+  background-image: url(../img/header-background.jpg);  /* image courtesy of unsplash.com */
   background-color:#3B5998;      /* fallback background color if img fails to load*/
   height: auto;
   background-position: center;
@@ -92,7 +92,7 @@ h1, h4 {
   overflow: hidden;
   padding: 2em;
 }
-  
+
 /* Is there enough room? */
 @media(min-width:769px){
   .container{

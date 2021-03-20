@@ -46,3 +46,17 @@
     background: #ea4c89;
     color: white;
   }
+
+/* give .fa class more specificity with different style */
+/* used in article author line within id #content */
+#content .fa {
+  background: none;
+  color: black;
+  padding: 0;
+  font-size: 20px;
+  width: 24px;
+  text-align: left;
+  text-decoration: none;
+  margin: 0;
+  border-radius: 10%;
+}

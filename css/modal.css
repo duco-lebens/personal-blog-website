@@ -1,3 +1,5 @@
+/* used to make a modal window to display a larger picture in this case */
+/* courtesy of w3schools */
 body {font-family: Arial, Helvetica, sans-serif;}
 
 #myImg {
@@ -28,7 +30,6 @@ body {font-family: Arial, Helvetica, sans-serif;}
   margin: auto;
   display: block;
   width: 80%;
-  /* max-width: 769px; */
 }
 
 /* Caption of Modal Image */
@@ -36,7 +37,6 @@ body {font-family: Arial, Helvetica, sans-serif;}
   margin: auto;
   display: block;
   width: 80%;
-  /* max-width: 769px; */
   text-align: center;
   color: #ccc;
   padding: 10px 0;
@@ -78,11 +78,3 @@ body {font-family: Arial, Helvetica, sans-serif;}
   text-decoration: none;
   cursor: pointer;
 }
-
-/* 100% Image Width on Smaller Screens 
-@media only screen and (max-width: 769px){
-  .modal-content {
-    width: 100%;
-  }
-}
-*/

@@ -8,18 +8,8 @@
       name="viewport"
     />
     <link rel="stylesheet" href="css/blog-post.css">
-    <link rel="stylesheet" href="css/lines.css">
     <link rel="stylesheet" href="css/cards.css">
     <link rel="stylesheet" href="css/modal.css">
-    <link rel="stylesheet" href="css/bw-social.css">
-
-    <script>
-      // blog filling
-      var str = "Lorem ipsum dolor sit amet consectetur adipisicing elit." +
-                      "Non exercitationem suscipit alias consequuntur iusto autem " +
-                      "dolor vel iste officia harum pariatur hic, qui accusamus dolores! " +
-                      "Eveniet odio saepe sapiente soluta! "
-    </script>
   </head>
   <body>
     <div class="container">
@@ -27,9 +17,11 @@
         <h1>January</h1>
         <body>All of this month's writing</body>
       </div>
-    <div id="content" class="box">
+
+      <div id="content" class="box">
       <body>
         <div class="row">
+
           <div class="column">
             <article class="card">
               <section aria-labelledby="firstjanpost">
@@ -55,27 +47,33 @@
               </section>
             </article>
           </div>
-        
+
           <div class="column">
             <article class="card">
               <section aria-labelledby="secondjanpost">
                 <h1 id="secondjanpost">We're on our way</h1>
                 <h2>January 21st - 2021</h2>
                 <img src="img/john-doe.jpg" alt="John Doe">
-                <i> Author: James McGill</i>・reading time: less than 1 minute・
+                <i> Author: John Doe</i>・reading time: less than 1 minute・
                 <a href="#"><i class="fa fa-dribbble"aria-label="Link to john-does Dribbble page"></i></a>
                 <a href="#"><i class="fa fa-twitter" aria-label="Link to john-does Twitter page"></i></a>
                 <a href="#"><i class="fa fa-linkedin"aria-label="Link to john-does LinkedIn page"></i></a>
                 <a href="#"><i class="fa fa-facebook"aria-label="Link to john-does Facebook page"></i></a>
-                <p>Already well into the new year and not a glitch in site!</p>
+                <p><q>Already well into the new year and not a glitch in site!</q></p>
                 <p id="third"></p>
               </section>
             </article>
           </div>
         </div>
-        
+
       </body>
       <script>
+        // blog filling
+        var str = "Lorem ipsum dolor sit amet consectetur adipisicing elit." +
+                  "Non exercitationem suscipit alias consequuntur iusto autem " +
+                  "dolor vel iste officia harum pariatur hic, qui accusamus dolores! " +
+                  "Eveniet odio saepe sapiente soluta! "
+
         // put in some filling, and again, and again...
         document.getElementById("first").innerHTML = str.repeat(8);  
         document.getElementById("second").innerHTML = str.repeat(9);
@@ -105,8 +103,9 @@
 
       </script>
     </div>
+
     <div id="footer" class="box" role="navigation">
-      <a href="index.html" ><h3>Return home</h3></a>
+      <button type="button" onclick="location.href='index.html'">Return home</button>
     </div>
   </body>
 </html>
