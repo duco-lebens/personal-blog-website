@@ -26,7 +26,7 @@ body {
 }
 
 /* Responsive columns */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 769px) {
   .column {
     width: 100%;
     display: block;

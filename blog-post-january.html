@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -7,6 +7,7 @@
       content="width=device-width, initial-scale=1"
       name="viewport"
     />
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/blog-post.css">
     <link rel="stylesheet" href="css/cards.css">
     <link rel="stylesheet" href="css/modal.css">
@@ -28,11 +29,13 @@
                 <h1 id="firstjanpost">Another year</h1>
                 <h2>January 2nd - 2021</h2>
                 <img src="img/stephanie.jpg" alt="Stephanie"> 
-                <i> Author: Stephanie</i>・reading time: less than 2 minutes
-                <a href="#"><i class="fa fa-dribbble" aria-label="Link to stephanies Dribbble page" ></i></a>
-                <a href="#"><i class="fa fa-twitter" aria-label="Link to stephanies Twitter page" ></i></a>
-                <a href="#"><i class="fa fa-linkedin" aria-label="Link to stephanies LinkedIn page" ></i></a>
-                <a href="#"><i class="fa fa-facebook" aria-label="Link to stephanies Facebook page" ></i></a>
+                <figcaption><i> Author: Stephanie</i></figcaption>reading time: less than 2 minutes
+                <div class="socialbox">
+                  <a href="#"><i class="fa fa-dribbble" aria-label="Link to stephanies Dribbble page"></i></a>
+                  <a href="#"><i class="fa fa-twitter" aria-label="Link to stephanies Twitter page"></i></a>
+                  <a href="#"><i class="fa fa-linkedin" aria-label="Link to stephanies LinkedIn page"></i></a>
+                  <a href="#"><i class="fa fa-facebook" aria-label="Link to stephanies Facebook page"></i></a>
+                </div>
                 <p>A new year just started and hopefuly <u>without</u> viri</p>
                 <p id="first"></p>
                 <img id="myImg" src="img/january-2nd.way-too-big.jpg" alt="ioT image" class="center">
@@ -42,7 +45,7 @@
                   <img class="modal-content" id="img01">
                   <div id="caption"></div>
                 </div>
-                <i class="center">Close up of the new board</i>
+                <figcaption><i class="center">Close up of the new board</i></figcaption>
                 <p id="second"></p>
               </section>
             </article>
@@ -54,11 +57,13 @@
                 <h1 id="secondjanpost">We're on our way</h1>
                 <h2>January 21st - 2021</h2>
                 <img src="img/john-doe.jpg" alt="John Doe">
-                <i> Author: John Doe</i>・reading time: less than 1 minute・
-                <a href="#"><i class="fa fa-dribbble"aria-label="Link to john-does Dribbble page"></i></a>
-                <a href="#"><i class="fa fa-twitter" aria-label="Link to john-does Twitter page"></i></a>
-                <a href="#"><i class="fa fa-linkedin"aria-label="Link to john-does LinkedIn page"></i></a>
-                <a href="#"><i class="fa fa-facebook"aria-label="Link to john-does Facebook page"></i></a>
+                <figcaption><i> Author: John Doe</i></figcaption>reading time: less than 1 minute
+                <div class="socialbox">
+                  <a href="#"><i class="fa fa-dribbble" aria-label="Link to john-does Dribbble page"></i></a>
+                  <a href="#"><i class="fa fa-twitter" aria-label="Link to john-does Twitter page"></i></a>
+                  <a href="#"><i class="fa fa-linkedin" aria-label="Link to john-does LinkedIn page"></i></a>
+                  <a href="#"><i class="fa fa-facebook" aria-label="Link to john-does Facebook page"></i></a>
+                </div>
                 <p><q>Already well into the new year and not a glitch in site!</q></p>
                 <p id="third"></p>
               </section>
@@ -67,43 +72,8 @@
         </div>
 
       </body>
-      <script>
-        // blog filling
-        var str = "Lorem ipsum dolor sit amet consectetur adipisicing elit." +
-                  "Non exercitationem suscipit alias consequuntur iusto autem " +
-                  "dolor vel iste officia harum pariatur hic, qui accusamus dolores! " +
-                  "Eveniet odio saepe sapiente soluta! "
-
-        // put in some filling, and again, and again...
-        document.getElementById("first").innerHTML = str.repeat(8);  
-        document.getElementById("second").innerHTML = str.repeat(9);
-        document.getElementById("third").innerHTML = str.repeat(9);
-
-        // a few lines for zooming the picture. Design in modal.css
-        // Get the modal
-        var modal = document.getElementById("myModal");
-
-        // Get the image and insert it inside the modal - use its "alt" text as a caption
-        var img = document.getElementById("myImg");
-        var modalImg = document.getElementById("img01");
-        var captionText = document.getElementById("caption");
-        img.onclick = function(){
-          modal.style.display = "block";
-          modalImg.src = this.src;
-          captionText.innerHTML = this.alt;
-        }
-
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() { 
-          modal.style.display = "none";
-        }
-
-      </script>
     </div>
-
+    <script type="text/javascript" src="js/modal.js"></script>  <!-- puts in a bit of text at first, second and third id's and takes care of modal img window-->
     <div id="footer" class="box" role="navigation">
       <button type="button" onclick="location.href='index.html'">Return home</button>
     </div>

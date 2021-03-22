@@ -1,0 +1,22 @@
+/* keep control of img sizes and position */
+.imgsizehalf {
+    width: 50%;
+    height: 50%;
+  }
+  .imgsizequarter {
+    width: 25%;
+    height: 25%;
+  } 
+  .imgsizetimes2 {
+    width: 200%;
+    height: 200%;
+  }
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 50%; */
+    width:100%;
+    max-width:300px;
+  }
+  

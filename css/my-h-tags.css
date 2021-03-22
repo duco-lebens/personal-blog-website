@@ -1,0 +1,13 @@
+/* reset default margins on headers */
+h1, h2, h3, h4 {
+    margin: 0px;
+  }
+  
+  /* and set new ones */
+  h2, h3 {
+    margin-bottom: 5px;
+  }
+  h1, h4 {
+    margin-bottom: 2px;
+  }
+  
